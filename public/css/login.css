@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.login-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+  padding: 45px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+.login-card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 35px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  opacity: 0.8;
+}
+
+.input-group input {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-group input:focus {
+  outline: 2px solid #00eaff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #00eaff;
+  color: #0f2027;
+  margin-top: 10px;
+  box-shadow: 0 10px 30px rgba(0, 234, 255, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0, 234, 255, 0.6);
+}
+
+.links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.links a {
+  color: #00eaff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 35px 25px;
+  }
+}

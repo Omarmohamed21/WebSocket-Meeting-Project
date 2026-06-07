@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 60px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.content h1 span {
+  color: #00eaff;
+}
+
+.content p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #00eaff;
+  color: #0f2027;
+  box-shadow: 0 10px 30px rgba(0, 234, 255, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 234, 255, 0.6);
+}
+
+.btn-outline {
+  border: 2px solid #00eaff;
+  color: #00eaff;
+}
+
+.btn-outline:hover {
+  background: #00eaff;
+  color: #0f2027;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #00eaff;
+}
+
+.feature {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #00eaff;
+  color: #0f2027;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+
+  .content h1 {
+    font-size: 2.4rem;
+  }
+}

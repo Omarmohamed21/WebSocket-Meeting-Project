@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="../../css/userDashboard.css" />
+  </head>
+
+  <body>
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="brand">User Dashboard</div>
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+
+    <!-- SEND VISIT -->
+    <div class="form-wrapper">
+      <form id="visitForm">
+        <input id="vName" type="text" placeholder="Name" required />
+        <input id="vRank" type="text" placeholder="Rank" required />
+        <input id="vJob" type="text" placeholder="Job" required />
+        <input id="unit" type="text" placeholder="Unit" required />
+        <textarea id="note" placeholder="Note"></textarea>
+
+        <button type="submit">Send Visit</button>
+      </form>
+    </div>
+
+    <!-- VISITS -->
+    <div class="container" id="visitsContainer">
+      <!-- visits injected here -->
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../../js/authGuard.js"></script>
+    <script src="../../js/logout.js"></script>
+    <script src="../../js/user/userDashboard.js"></script>
+  </body>
+</html>

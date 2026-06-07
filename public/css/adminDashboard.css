@@ -1,0 +1,268 @@
+/* ===== YOUR ORIGINAL CSS (UNCHANGED) ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.topbar {
+  height: 70px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 0 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: #00eaff;
+}
+
+#searchInput {
+  flex: 1;
+  max-width: 420px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.logout-btn {
+  background: #00eaff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 30px;
+  color: #0f2027;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container {
+  padding: 45px;
+}
+
+/* ===== NEW (MATCHING STYLE) ===== */
+
+.date-group {
+  margin-bottom: 50px;
+}
+
+.date-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #00eaff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+thead {
+  background: rgba(0, 234, 255, 0.15);
+}
+
+th,
+td {
+  padding: 18px 20px;
+}
+
+th {
+  color: #00eaff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+tbody tr:hover {
+  background: rgba(0, 234, 255, 0.12);
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.accepted {
+  background: rgba(0, 234, 255, 0.25);
+  color: #00eaff;
+}
+
+.rejected {
+  background: rgba(255, 80, 80, 0.25);
+  color: #ff5c5c;
+}
+
+.pending {
+  background: rgba(255, 200, 0, 0.25);
+  color: #ffd166;
+}
+
+.actions button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.accept {
+  background: rgba(0, 234, 255, 0.2);
+  color: #00eaff;
+}
+
+.reject {
+  background: rgba(255, 80, 80, 0.2);
+  color: #ff5c5c;
+}
+
+.finish {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* =====================
+   ACTION BUTTONS (ADMIN)
+===================== */
+
+td.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+td.actions button {
+  all: unset; /* reset bad inherited styles */
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: center;
+  pointer-events: auto;
+}
+
+/* ACCEPT */
+td.actions .accept {
+  background: rgba(0, 234, 255, 0.2);
+  color: #00eaff;
+}
+
+td.actions .accept:hover {
+  background: #00eaff;
+  color: #0f2027;
+  box-shadow: 0 0 15px rgba(0, 234, 255, 0.6);
+}
+
+/* REJECT */
+td.actions .reject {
+  background: rgba(255, 80, 80, 0.25);
+  color: #ff5c5c;
+}
+
+td.actions .reject:hover {
+  background: #ff5c5c;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 80, 80, 0.6);
+}
+
+/* FINISH */
+td.actions .finish {
+  background: rgba(255, 193, 7, 0.25);
+  color: #ffc107;
+}
+
+td.actions .finish:hover {
+  background: #ffc107;
+  color: #0f2027;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.6);
+}
+
+td.actions .delete-btn {
+  background: rgba(255, 59, 59, 0.25);
+  color: #ff4d4d;
+}
+
+td.actions .delete-btn:hover {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+button.ring {
+  background: rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+}
+
+button.ring:hover {
+  background: #ffd700;
+  color: #0f2027;
+}
+/* ===== RING ALL BUTTON ===== */
+.ring-all-btn {
+  background: rgba(255, 215, 0, 0.25);
+  color: #ffd700;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ring-all-btn:hover {
+  background: #ffd700;
+  color: #0f2027;
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.7);
+}
+
+/* =====================
+   DELETE VISIT BUTTON
+===================== */
+
+.delete-btn {
+  all: unset;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: rgba(255, 59, 59, 0.2);
+  color: #ff4d4d;
+
+  transition: 0.25s ease;
+  box-shadow: 0 0 0 rgba(255, 59, 59, 0);
+}
+
+.delete-btn:hover {
+  background: #ff4d4d;
+  color: #fff;
+  box-shadow: 0 0 18px rgba(255, 77, 77, 0.65);
+  transform: translateY(-1px);
+}
+
+.delete-btn:active {
+  transform: scale(0.96);
+}

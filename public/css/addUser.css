@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =====================
+   BODY
+===================== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* =====================
+   TOP BAR
+===================== */
+.topbar {
+  height: 70px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: #00eaff;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #00eaff;
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 234, 255, 0.4);
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  background: #00eaff;
+  color: #0f2027;
+  box-shadow: 0 10px 30px rgba(0, 234, 255, 0.4);
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+  background: #00eaff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  color: #0f2027;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.35s ease;
+  box-shadow: 0 10px 30px rgba(0, 234, 255, 0.4);
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0, 234, 255, 0.6);
+}
+/* =====================
+   PAGE WRAPPER
+===================== */
+.page-wrapper {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* =====================
+   TITLE
+===================== */
+.page-title {
+  font-size: 28px;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+/* =====================
+   FORM
+===================== */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  opacity: 0.85;
+}
+
+.input-group input,
+.input-group select {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+/* =====================
+   SELECT DROPDOWN FIX
+===================== */
+.input-group select {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Dropdown list */
+.input-group select option {
+  background-color: #0f2027;
+  color: #00eaff;
+}
+
+/* Selected option */
+.input-group select option:checked {
+  background-color: #00eaff;
+  color: #0f2027;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  outline: 2px solid #00eaff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* =====================
+   BUTTON
+===================== */
+.actions {
+  margin-top: 40px;
+  text-align: right;
+}
+
+.btn-primary {
+  background: #00eaff;
+  color: #0f2027;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 234, 255, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0, 234, 255, 0.6);
+}
+
+/* =====================
+   MESSAGE
+===================== */
+.message {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 900px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    text-align: left;
+  }
+}

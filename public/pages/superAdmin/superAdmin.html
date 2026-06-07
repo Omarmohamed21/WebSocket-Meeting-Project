@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Super Admin Dashboard | Meetify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../css/dashboard.css" />
+  </head>
+  <body>
+    <!-- TOP NAVBAR -->
+    <header class="navbar">
+      <div class="logo">Meetify</div>
+
+      <!-- TITLE INSTEAD OF MENU -->
+      <div class="navbar-title">Super Admin Dashboard</div>
+
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+      <div class="page-header">
+        <h1>Welcome, Super Admin</h1>
+        <p>Manage the entire system from here</p>
+      </div>
+
+      <div class="cards">
+        <a href="./addUser.html" class="card"> Add new user </a>
+        <a href="./allUsers.html" class="card">Track all users</a>
+
+        <a href="./allVisit.html" class="card">Track Visits</a>
+      </div>
+    </main>
+
+    <script src="../../js/authGuard.js"></script>
+    <script src="../../js/logout.js"></script>
+  </body>
+</html>

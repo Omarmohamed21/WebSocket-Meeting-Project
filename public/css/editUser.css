@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =====================
+   BODY
+===================== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =====================
+   CARD
+===================== */
+.edit-card {
+  width: 100%;
+  max-width: 850px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  border-radius: 18px;
+  padding: 45px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* =====================
+   TITLE
+===================== */
+.edit-card h2 {
+  font-size: 28px;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+/* =====================
+   FORM GRID
+===================== */
+#editForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+/* =====================
+   INPUT GROUP
+===================== */
+#editForm input,
+#editForm select {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+#editForm input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* FIX SELECT TEXT VISIBILITY */
+#editForm select option {
+  background: #0f2027;
+  color: #fff;
+}
+
+/* FOCUS */
+#editForm input:focus,
+#editForm select:focus {
+  outline: 2px solid #00eaff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* =====================
+   FULL WIDTH FIELDS
+===================== */
+#password,
+#confirmPassword {
+  grid-column: span 2;
+}
+
+/* =====================
+   BUTTON
+===================== */
+#editForm button {
+  grid-column: span 2;
+  margin-top: 25px;
+  background: #00eaff;
+  color: #0f2027;
+  border: none;
+  padding: 14px 0;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.35s ease;
+  box-shadow: 0 10px 30px rgba(0, 234, 255, 0.4);
+}
+
+#editForm button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0, 234, 255, 0.6);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 800px) {
+  .edit-card {
+    padding: 35px 25px;
+  }
+
+  #editForm {
+    grid-template-columns: 1fr;
+  }
+
+  #password,
+  #confirmPassword {
+    grid-column: span 1;
+  }
+}
+/* =====================
+   TOAST MESSAGE
+===================== */
+.toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  min-width: 320px;
+  max-width: 420px;
+  padding: 18px 26px;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #0f2027;
+  background: #00eaff;
+  box-shadow: 0 25px 60px rgba(0, 234, 255, 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.35s ease;
+  z-index: 9999;
+}
+
+/* SHOW */
+.toast.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
+}
+
+/* ERROR */
+.toast.error {
+  background: #ff6b6b;
+  color: #fff;
+  box-shadow: 0 25px 60px rgba(255, 107, 107, 0.45);
+}
+
+/* HIDE */
+.toast.hidden {
+  display: none;
+}

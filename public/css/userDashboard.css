@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* ===== TOP BAR ===== */
+.topbar {
+  height: 70px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: #00eaff;
+}
+
+.logout-btn {
+  background: #00eaff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 30px;
+  color: #0f2027;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== FORM ===== */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+form {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+form h2 {
+  margin-bottom: 20px;
+  color: #00eaff;
+  text-align: center;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+form textarea {
+  resize: none;
+  height: 80px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: #00eaff;
+  color: #0f2027;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ===== VISITS ===== */
+.container {
+  padding: 40px;
+}
+
+.visit-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+.visit-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.badge {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pending {
+  background: rgba(255, 200, 0, 0.25);
+  color: #ffd166;
+}
+
+.accepted {
+  background: rgba(0, 234, 255, 0.25);
+  color: #00eaff;
+}
+
+.rejected {
+  background: rgba(255, 80, 80, 0.25);
+  color: #ff5c5c;
+}
+
+.finished {
+  margin-top: 15px;
+  color: #90ee90;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* =====================
+   DELETE VISIT BUTTON
+===================== */
+
+.delete-btn {
+  all: unset;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: rgba(255, 59, 59, 0.2);
+  color: #ff4d4d;
+
+  transition: 0.25s ease;
+  box-shadow: 0 0 0 rgba(255, 59, 59, 0);
+}
+
+.delete-btn:hover {
+  background: #ff4d4d;
+  color: #fff;
+  box-shadow: 0 0 18px rgba(255, 77, 77, 0.65);
+  transform: translateY(-1px);
+}
+
+.delete-btn:active {
+  transform: scale(0.96);
+}
+
+.visit-footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finished {
+  font-size: 13px;
+  font-weight: 600;
+  color: #00eaff;
+}

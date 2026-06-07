@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Edit User</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/editUser.css" />
+  </head>
+
+  <body>
+    <!-- EDIT CARD -->
+    <div class="edit-card">
+      <h2>Edit User</h2>
+
+      <form id="editForm">
+        <input id="name" placeholder="Name" />
+
+        <input id="username" placeholder="Username" />
+
+        <input id="job" placeholder="Job" />
+
+        <input id="slug" placeholder="Slug" />
+
+        <select id="role">
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+          <option value="superAdmin">Super Admin</option>
+        </select>
+
+        <select id="rank">
+          <option value="1st level">1st Level</option>
+          <option value="2nd level">2nd Level</option>
+          <option value="3rd level">3rd Level</option>
+        </select>
+
+        <input type="password" id="password" placeholder="New Password" />
+
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+        />
+
+        <button type="submit">Update User</button>
+      </form>
+    </div>
+    <div id="toast" class="toast hidden"></div>
+
+    <!-- SCRIPTS -->
+    <script src="../../js/authGuard.js"></script>
+    <script src="./../../js/superAdmin/editUser.js"></script>
+  </body>
+</html>

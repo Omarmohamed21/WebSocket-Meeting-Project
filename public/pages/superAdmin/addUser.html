@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add User</title>
+    <link rel="stylesheet" href="./../../css/addUser.css" />
+  </head>
+
+  <body>
+    <!-- TOP MENU BAR -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <span class="logo">SuperAdmin</span>
+        <a href="./superAdmin.html" class="nav-link"> ← Dashboard </a>
+      </div>
+
+      <div class="topbar-right">
+        <button class="logout-btn" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+
+    <div class="page-wrapper">
+      <h1 class="page-title">Create New User</h1>
+
+      <form id="registerForm" class="register-form">
+        <div class="form-grid">
+          <div class="input-group">
+            <label>Name</label>
+            <input type="text" id="name" required />
+          </div>
+
+          <div class="input-group">
+            <label>Username</label>
+            <input type="text" id="username" required />
+          </div>
+
+          <div class="input-group">
+            <label>Password</label>
+            <input type="password" id="password" required />
+          </div>
+
+          <div class="input-group">
+            <label>Confirm Password</label>
+            <input type="password" id="confirmPassword" required />
+          </div>
+
+          <div class="input-group">
+            <label>Slug</label>
+            <input type="text" id="slug" placeholder="ex: comm_12" required />
+          </div>
+
+          <div class="input-group">
+            <label>Job</label>
+            <input type="text" id="job" required />
+          </div>
+
+          <div class="input-group">
+            <label>Rank</label>
+            <select id="rank" required>
+              <option value="">Select rank</option>
+              <option value="Trainee">Trainee</option>
+              <option value="Applie ">Applier</option>
+              <option value="junior">Junior</option>
+              <option value="senior">Senior</option>
+              <option value="teamleader">Team Leader</option>
+              <option value="Manager">Manager</option>
+             
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label>Role</label>
+            <select id="role" required>
+              <option value="">Select role</option>
+              <option value="user">user</option>
+              <option value="admin">admin</option>
+              <option value="superAdmin">superAdmin</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn-primary">Create User</button>
+        </div>
+
+        <p id="msg" class="message"></p>
+      </form>
+    </div>
+
+    <script src="./../../js/superAdmin/addUser.js"></script>
+    <script src="../../js/authGuard.js"></script>
+    <script src="./../../js/logout.js"></script>
+  </body>
+</html>

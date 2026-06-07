@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.about-card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 60px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+.about-card h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.about-card h1 span {
+  color: #00eaff;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.05rem;
+  opacity: 0.9;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.sections {
+  display: grid;
+  gap: 30px;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.section h3 {
+  color: #00eaff;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+.section p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section ul li {
+  padding: 8px 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  position: relative;
+  padding-left: 20px;
+}
+
+.section ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #00eaff;
+}
+
+.actions {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 34px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #00eaff;
+  color: #0f2027;
+  box-shadow: 0 10px 30px rgba(0, 234, 255, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 234, 255, 0.6);
+}
+
+.btn-outline {
+  border: 2px solid #00eaff;
+  color: #00eaff;
+}
+
+.btn-outline:hover {
+  background: #00eaff;
+  color: #0f2027;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .about-card {
+    padding: 40px 30px;
+  }
+
+  .about-card h1 {
+    font-size: 2.2rem;
+  }
+}

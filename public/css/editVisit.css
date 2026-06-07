@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =====================
+   BODY
+===================== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* =====================
+   CARD
+===================== */
+.card {
+  width: 500px;
+  padding: 40px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00eaff;
+}
+
+/* =====================
+   FIELDS
+===================== */
+.field {
+  margin-bottom: 18px;
+}
+
+.field span {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.field p {
+  margin-top: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* =====================
+   BUTTON
+===================== */
+button {
+  margin-top: 25px;
+  width: 100%;
+  background: #00eaff;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  color: #0f2027;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 234, 255, 0.4);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0, 234, 255, 0.6);
+}

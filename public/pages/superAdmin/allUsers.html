@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Users Management</title>
+    <link rel="stylesheet" href="../../css/allUsers.css" />
+  </head>
+  <body>
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <a style="text-decoration: none" href="./superAdmin.html"
+        ><div class="brand">Super Admin</div></a
+      >
+
+      <!-- 🔍 SEARCH INPUT -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by name, username, job, role..."
+        autocomplete="off"
+      />
+
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+
+    <!-- USERS TABLE -->
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Rank</th>
+            <th>Job</th>
+            <th>Slug</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="usersBody"></tbody>
+      </table>
+    </div>
+
+    <script src="../../js/authGuard.js"></script>
+    <script src="../../js/logout.js"></script>
+    <script src="../../js/superAdmin/allUsers.js"></script>
+  </body>
+</html>

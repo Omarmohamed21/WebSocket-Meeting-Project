@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =====================
+   BODY
+===================== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* =====================
+   TOP BAR
+===================== */
+.topbar {
+  height: 70px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 0 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: #00eaff;
+  white-space: nowrap;
+}
+
+/* SEARCH */
+#searchInput {
+  flex: 1;
+  max-width: 420px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+#searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#searchInput:focus {
+  outline: 2px solid #00eaff;
+}
+
+/* LOGOUT */
+.logout-btn {
+  background: #00eaff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 30px;
+  color: #0f2027;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.35s ease;
+  box-shadow: 0 10px 30px rgba(0, 234, 255, 0.4);
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0, 234, 255, 0.6);
+}
+
+/* =====================
+   CONTAINER
+===================== */
+.container {
+  padding: 45px;
+}
+
+/* =====================
+   TABLE
+===================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+thead {
+  background: rgba(0, 234, 255, 0.15);
+}
+
+th,
+td {
+  padding: 18px 20px;
+  text-align: left;
+}
+
+th {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #00eaff;
+}
+
+td {
+  font-size: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+tbody tr {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  background: rgba(0, 234, 255, 0.12);
+}
+
+/* =====================
+   ACTION BUTTONS
+===================== */
+td button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.3s ease;
+}
+
+td button:first-child {
+  background: rgba(0, 234, 255, 0.2);
+  color: #00eaff;
+}
+
+td button:first-child:hover {
+  background: #00eaff;
+  color: #0f2027;
+}
+
+td button:last-child {
+  background: rgba(255, 80, 80, 0.2);
+  color: #ff5c5c;
+}
+
+td button:last-child:hover {
+  background: #ff5c5c;
+  color: #fff;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 900px) {
+  .container {
+    padding: 30px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}

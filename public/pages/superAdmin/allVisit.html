@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Visits Management</title>
+    <link rel="stylesheet" href="../../css/allVisit.css" />
+  </head>
+  <body>
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <a style="text-decoration: none" href="./superAdmin.html">
+        <div class="brand">Super Admin</div></a
+      >
+      <input type="text" id="searchInput" placeholder="Search visits..." />
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+
+    <!-- VISITS TABLE -->
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Visitor Name</th>
+            <th>Job</th>
+            <th>Rank</th>
+            <th>Unit</th>
+            <th>Status</th>
+            <th>Finished</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="visitsBody"></tbody>
+      </table>
+    </div>
+
+    <script src="../../js/authGuard.js"></script>
+    <script src="../../js/logout.js"></script>
+    <script src="../../js/superAdmin/allVisit.js"></script>
+  </body>
+</html>
